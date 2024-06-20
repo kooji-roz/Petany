@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:#2b2f35;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  header .logo {
+    font-size: 3rem;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  header .logo:hover {
+    transform: scale(1.2);
+  }
+  header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: #c9cbcd;
+    transition: 0.5s;
+  }
+  header .navbar a:hover{
+    color:#ffffff;
+  }
+  header input {
+    display: none;
+  }
+  header label {
+    font-size: 3rem;
+    color: #c9cbcd;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 9% 5% 9%;
+  }
+  .about .text h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .about .text p {
+    font-size: 1.8rem;
+    color: #2b2f35;
+    padding: 10px 20px 5px 0;
+  }
+  .about li {
+    list-style-type: none;
+    font-size: 1.8rem;
+}
+.about li::before {
+    color:#3095c7; 
+    content: "▪";
+    padding-right: 10px;
+}
+.regist {
+    margin: 0 9% 8% 9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3ecd9;
+    border-radius: 5px;
+    padding: 35px;
+  }
+  .button-btn .btn {
+    display: inline-block;
+      background: #a35b33;
+      color: white;
+      padding: 1rem 4rem;
+      border-radius: 5px;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      transition: .5s;
+  }
+  .button-btn h1 {
+    font-size: 25px;
+  }
+  .btn:hover {
+    transform: scale(1.2);
+  }
+  .lapka img {
+    width: 8vw;
+  }
+
+
+
+
+
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #2b2f35;
+    padding: 70px 9%;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col p {
+    font-size: 1.8rem;
+    color: #c9cbcd;
+  }
+  .footer-col h4{
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #a35b33;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #c9cbcd;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #66b9e0;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+
+
+
+@media(max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }  
+  }
+
+  @media (max-width: 991px) {
+ 
+  }
+
+  @media (max-width: 923px) {
+  
+  }
+
+  @media (max-width: 775px) {
+    header label {
+      visibility: visible;
+      opacity: 1;
+    }
+    .footer-col{
+      width: 100%;
+    }
+    .footer-col h4 {
+      font-size: 2rem;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #2b2f35;
+      padding: 1rem 2rem;
+      border-top: .1rem solid rgba(0,0,0,0.1);
+      transform-origin: top;
+      transform: scale(0);
+      opacity: 0;
+    }
+    header .navbar a {
+      display: block;
+      margin: 2rem 0;
+      font-size: 1.8rem;
+    }
+    header input:checked ~ .navbar {
+      transform: scale(1);
+      opacity: 1;
+    }
+    .regist {
+        flex-direction: column;
+      }
+      .lapka img {
+        width: 15vw;
+      }
+      .button-btn h1 {
+        font-size: 20px;
+      }
+      .button-btn {
+        margin-top: 30px;
+      }
+  }
+
+  @media (max-width: 520px) {
+
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+   
+    
+  }

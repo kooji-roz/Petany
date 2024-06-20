@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+        <title>Ветеринарная клиника Petany</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+<header class="header">
+  <a href="index.html" class="logo">Petany</a>
+
+  <input type="checkbox" name="menu" id="menu">
+  <label for="menu"><i class="fa-solid fa-bars-staggered"></i></label>
+
+  <nav class="navbar">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="index.html #services">Услуги</a>
+    <a href="about.html #about-link">Контакты</a>
+    <a href="form.html">Записаться</a>
+  </nav>
+  
+</header>
+
+
+<div class="formwrap">  
+    <form id="form" action="" method="post">
+     <h4>Оставьте заявку и мы скоро с Вами свяжемся!</h4>
+    
+       <input id="name" type="text" placeholder="Ваше имя" required>
+    
+       <input id="email" type="email" placeholder="Ваш Email" required>
+     
+       <input id="tel" type="tel"  placeholder="Номер телефона" required>
+
+       <textarea id="message" placeholder="Введите Ваше сообщение.."  required></textarea>
+       <button type="submit" name="submit" id="contact-submit">Отправить</button>
+   </form>
+ </div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>petany</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="index.html #services">Наши услуги</a></li>
+          <li><a href="about.html #about-link">Контакты</a></li>
+          <li><a href="form.html">Записаться онлайн</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Популярные услуги</h4>
+        <ul>
+          <li><a href="services/vaccination.html">вакцинация</li>
+          <li><a href="services/castration.html">кастрация</a></li>
+          <li><a href="services/sterilization.html">стерилизация</a></li>
+          <li><a href="services/therapy.html">терапия</a></li>
+          <li><a href="services/uzi.html">УЗИ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>Info@example.com</p>
+        <p>+121 56556 565556</p>
+        <p>г.Москва</p>
+      </div>
+      <div class="footer-col">
+        <h4>Социальные сети</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="./scripts/just-validate.production.min.js"></script>
+<script src="./scripts/send_telegram.js"></script>
+</body>
+</html>
